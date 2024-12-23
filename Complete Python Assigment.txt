@@ -1,0 +1,252 @@
+x = "ab8de5"
+y = ['g','h','a','b','e','5']
+# 1. Combine x and y in one ds
+# 2. eliminate repeating elements
+# 3. Try to get this output: heb8
+x_temp = list(x)
+for i in y:
+    x_temp.append(i)
+
+print(x_temp)
+unique = []
+
+for element in x_temp:
+    if element in unique:
+        pass
+    else:
+        unique.append(element)
+
+print(unique)
+
+unique.sort(reverse=True)
+
+
+
+temp = ''
+for i in unique[0::2]:
+    temp+=i
+print(temp)
+
+
+
+import math
+a = "1a4b9c9d1e4fg"
+
+# Separate the digits and alphabets into
+# two different lists and find the sum
+# of square roots of each digit
+
+digit_list= []
+alph_list = []
+
+for element in a:
+    if element.isnumeric():
+        digit_list.append(element)
+    else:
+        alph_list.append(element)
+
+print("digit list :",digit_list)
+print("Alpha list: ",alph_list)
+
+sum_of_squre_root = 0
+
+for i in digit_list:
+    sum_of_squre_root= sum_of_squre_root + math.sqrt(int(i))
+print("Sum of Square root: {} ".format(sum_of_squre_root))
+
+
+a = [1, 1, 2, 1, 3, 4, 5, 4, 3]
+
+#find the  frequency of each element in the list
+
+d = {}
+
+for element in a:
+    if element in d:
+        d[element]+=1
+    else:
+        d[element]=1
+print("Frequency : {}".format(d))
+
+
+#############################################################
+
+# Program to find the maximum element in a list
+
+###############################################################
+
+in given list 
+1.add even numbered indexes to the total
+2.subtract odd numbered indexes from the total
+3.index 0 is considered an even index
+
+################################################################
+What is Python? How is it different from other programming languages?
+What are the key features of Python?
+Explain the differences between Python 2 and Python 3.
+How do you handle exceptions in Python?
+What are the advantages of using Python?
+What are the different data types in Python?
+What is the difference between a list and a tuple in Python?
+Explain the concept of generators in Python.
+What is the difference between append() and extend() methods in Python lists?
+How do you handle file I/O in Python?
+What is the difference between a shallow copy and a deep copy?
+Explain the Global Interpreter Lock (GIL) in Python.
+How do you achieve multithreading in Python?
+What are decorators in Python?
+Explain the concept of name and namespace in Python.
+How do you perform unit testing in Python?
+What is the purpose of __init__ method in Python classes?
+Explain the concept of inheritance and polymorphism in Python.
+How does garbage collection work in Python?
+What are some popular libraries/frameworks used in Python?
+################################################################################
+What is the difference between a shallow copy and a deep copy in Python?
+Write a program to reverse an integer in Python.
+Write a program in Python to check whether an integer is Armstrong number or not.
+Write a program in Python to check given number is prime or not.
+Write a program in Python to print the Fibonacci series using iterative method.
+Write a program in Python to print the Fibonacci series using recursive method.
+Write a program in Python to check whether a number is palindrome or not using iterative method.
+Write a program in Python to check whether a number is palindrome or not using recursive method.
+Write a program in Python to find greatest among three integers.
+Write a program in Python to check if a number is binary?
+Write a program in Python to find sum of digits of a number using recursion?
+Write a program in Python to swap two numbers without using third variable?
+Write a program in Python to swap two numbers using third variable?
+Write a program in Python to find prime factors of a given integer.
+Write a program in Python to add two integer without using arithmetic operator?
+Write a program in Python to find given number is perfect or not?
+Python Program to find the Average of numbers with explanations.
+Python Program to calculate factorial using iterative method.
+Python Program to calculate factorial using recursion.
+Python Program to check a given number is even or odd.
+Python program to print first n Prime Number with explanation.
+Python Program to print Prime Number in a given range.
+Python Program to find Smallest number among three.
+Python program to calculate the power using the POW method.
+Python Program to calculate the power without using POW function.(using for loop).
+Python Program to calculate the power without using POW function.(using while loop).
+Python Program to calculate the square of a given number.
+Python Program to calculate the cube of a given number.
+Python Program to calculate the square root of a given number.
+Python program to calculate LCM of given two numbers.
+Python Program to find GCD or HCF of two numbers.
+Python Program to find GCD of two numbers using recursion.
+Python Program to Convert Decimal Number into Binary.
+Python Program to convert Decimal number to Octal number.
+Python Program to check the given year is a leap year or not.
+Python Program to convert Celsius to Fahrenheit.
+Python Program to convert Fahrenheit to Celsius.
+Python program to calculate Simple Interest with explanation.
+######################Python Coding Questions on String###########################
+Python program to remove given character from String.
+Python Program to count occurrence of a given characters in string.
+Python Program to check if two Strings are Anagram.
+Python program to check a String is palindrome or not.
+Python program to check given character is vowel or consonant.
+Python program to check given character is digit or not.
+Python program to check given character is digit or not using isdigit() method.
+Python program to replace the string space with a given character.
+Python program to replace the string space with a given character using replace() method.
+Python program to convert lowercase char to uppercase of string.
+Python program to convert lowercase vowel to uppercase in string.
+Python program to delete vowels in a given string.
+Python program to count the Occurrence Of Vowels & Consonants in a String.
+Python program to print the highest frequency character in a String.
+Python program to Replace First Occurrence Of Vowel With ‘-‘ in String.
+Python program to count alphabets, digits and special characters.
+Python program to separate characters in a given string.
+Python program to remove blank space from string.
+Python program to concatenate two strings using join() method.
+Python program to concatenate two strings without using join() method.
+Python program to remove repeated character from string.
+Python program to calculate sum of integers in string.
+Python program to print all non repeating character in string.
+Python program to copy one string to another string.
+Python Program to sort characters of string in ascending order.
+Python Program to sort character of string in descending order.
+#####################Python Coding Questions on Array##################################
+Write a program in Python for, In array 1-100 numbers are stored, one number is missing how do you find it.
+Write a program in Python for, In a array 1-100 multiple numbers are duplicates, how do you find it.
+Write a program in Python for, How to find all pairs in array of integers whose sum is equal to given number.
+Write a program in Python for, How to compare two array is equal in size or not.
+Write a program in Python to find largest and smallest number in array.
+Write a program in Python to find second highest number in an integer array.
+Write a program in Python to find top two maximum number in array?
+Write a program in Python to remove duplicate elements form array.
+Python program to find top two maximum number in array.
+Python program to print array in reverse Order.
+Python program to reverse an Array in two ways.
+Python Program to calculate length of an array.
+Python program to insert an element at end of an Array.
+Python program to insert element at a given location in Array.
+Python Program to delete element at end of Array.
+Python Program to delete given element from Array.
+Python Program to delete element from array at given index.
+Python Program to find sum of array elements.
+Python Program to print all even numbers in array.
+Python Program to print all odd numbers in array.
+Python program to perform left rotation of array elements by two positions.
+Python program to perform right rotation in array by 2 positions.
+Python Program to merge two arrays.
+Python Program to find highest frequency element in array.
+Python Program to add two number using recursion.
+Python Linked List Coding interview questions
+Python Program to Create and Traverse Singly linked list.
+Python program to insert a node in linked list.
+Write a program in Python to reverse a singly linked list.
+Python Program to search an element in singly linked list.
+Linked list Deletion in Python: At beginning, End, Given location.
+Write a program in Python to find 3rd element of Linked List from last in single pass.
+Write a program in Python to find middle element of a linked list in single pass.
+How is memory managed in Python Programming Language?
+What is monkey patching in Python?
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  
+How can you replace string space with a given character in Python?
+def str_replace(text,ch):
+    result = ''
+    for i in text: 
+            if i == ' ': 
+                i = ch  
+            result += i 
+    return result
+
+text = "D t C mpBl ckFrid yS le"
+ch = "a"
+
+str_replace(text,ch)
+# 'DataCampBlackFridaySale'
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+
+
+Find the missing number in the array
+
+4 5 3 2 8 1 6 
+
+7 is missing
+
+
+def find_missing(input_list):
+
+  sum_of_elements = sum(input_list)
+ 
+  # There is exactly 1 number missing
+  n = len(input_list) + 1
+  actual_sum = (n * ( n + 1 ) ) / 2
+ 
+  return int(actual_sum - sum_of_elements)
+list_1 = [1,5,6,3,4]
+
+
+find_missing(list_1)
+# 2
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
